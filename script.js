@@ -1,7 +1,7 @@
 const container = document.getElementById('imageContainer');
 
 // Fetch the list of image files dynamically
-fetch('images/')
+fetch('./images/')
     .then(response => response.text())
     .then(text => {
         const parser = new DOMParser();
